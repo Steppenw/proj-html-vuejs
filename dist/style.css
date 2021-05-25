@@ -51,6 +51,11 @@ ul.links > li > a:hover {
   clear: both;
 }
 
+.col-4 {
+  width: calc(100% / 3);
+  float: left;
+}
+
 /*HEADER*/
 header {
   padding-top: 10px;
@@ -105,9 +110,33 @@ section.hero > .day-choice > h1 {
   margin-bottom: 20px;
 }
 
+/*MAIN*/
+main {
+  background-color: #f5f5f1;
+}
+main .journal {
+  background-color: white;
+  padding: 0 15px;
+  text-align: center;
+}
+main .journal > h4 {
+  padding: 20px;
+}
+
+.content {
+  padding: 0 15px;
+  text-align: center;
+}
+.content > img {
+  width: 100%;
+}
+.content > .title {
+  padding: 15px;
+}
+
 /*FOOTER*/
 footer {
-  padding: 50px;
+  padding: 50px 0;
 }
 footer .row {
   margin: 0 -20px;
