@@ -1,0 +1,55 @@
+/*HEADER*/
+header {
+  padding-top: ($spacing);
+}
+
+/*HEADER-LOGO*/
+section.logo > .container {
+  justify-content: space-between;
+}
+
+section.logo img {
+  margin: ($spacing * 2);
+}
+
+/*HEADER-NAV*/
+nav {
+  padding-bottom: ($spacing);
+}
+
+nav > ul {
+  justify-content: center;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin: 0 ($spacing);
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: ($spacing + 5px) ($spacing * 2);
+  color: #39403e;
+
+  &:hover {
+    color: #fc7525;
+  }
+}
+
+/*HEADER-HERO*/
+section.hero {
+  padding: ($spacing * 15) 0;
+}
+
+section.hero > .day-choice {
+  width: calc(100% / 3);
+  margin: auto;
+  background-color: white;
+  padding: ($spacing * 3);
+  text-align: center;
+  border-radius: $default-radius;
+
+  > h1 {
+    margin-bottom: ($spacing * 2);
+  }
+}

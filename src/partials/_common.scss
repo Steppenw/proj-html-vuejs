@@ -1,0 +1,49 @@
+/*COMMON*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  font-size: $default-font-size;
+}
+
+h1 {
+  font-size: $h1-font-size;
+}
+
+.container {
+  max-width: 75%;
+  width: 100%;
+  margin: auto;
+}
+
+.flex {
+  display: flex;
+}
+
+i {
+  color: $icons-color;
+  margin: 0 ($spacing);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.links > li > a {
+  color: #39403e;
+
+  &:hover {
+    color: #fc7525;
+  }
+}
+
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
