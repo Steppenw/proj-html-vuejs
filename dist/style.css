@@ -26,6 +26,10 @@ i {
   margin: 0 10px;
 }
 
+.social > a:hover > i {
+  color: #fc7525;
+}
+
 ul {
   list-style-type: none;
 }
