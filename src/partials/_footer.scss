@@ -1,5 +1,9 @@
 /*FOOTER*/
-footer {
+footer > .footer-imgs img {
+  width: 100%;
+}
+
+footer > .container {
   padding: ($spacing * 5) 0;
 
   .row {

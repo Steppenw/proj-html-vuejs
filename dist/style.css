@@ -51,9 +51,24 @@ ul.links > li > a:hover {
   clear: both;
 }
 
+.col-3 {
+  width: 25%;
+}
+
 .col-4 {
   width: calc(100% / 3);
-  float: left;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+/*BUTTONS*/
+.btn {
+  padding: 10px;
+  background-color: #fc7525;
+  border-radius: 8px;
+  color: white;
 }
 
 /*HEADER*/
@@ -67,7 +82,7 @@ section.logo > .container {
 }
 
 section.logo img {
-  margin: 20px;
+  padding: 20px 0;
 }
 
 /*HEADER-NAV*/
@@ -95,7 +110,7 @@ nav > ul > li > a:hover {
 
 /*HEADER-HERO*/
 section.hero {
-  padding: 150px 0;
+  padding: 150px 0 200px;
 }
 
 section.hero > .day-choice {
@@ -105,22 +120,22 @@ section.hero > .day-choice {
   padding: 30px;
   text-align: center;
   border-radius: 8px;
+  position: relative;
 }
 section.hero > .day-choice > h1 {
   margin-bottom: 20px;
+}
+section.hero > .day-choice > a.btn {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
 }
 
 /*MAIN*/
 main {
   background-color: #f5f5f1;
-}
-main .journal {
-  background-color: white;
-  padding: 0 15px;
-  text-align: center;
-}
-main .journal > h4 {
-  padding: 20px;
 }
 
 .content {
@@ -134,24 +149,49 @@ main .journal > h4 {
   padding: 15px;
 }
 
+/*MAIN-JOURNAL*/
+main > .container.relative {
+  position: relative;
+  padding-bottom: 400px;
+}
+main section.journal {
+  position: absolute;
+  top: -50px;
+  background-color: white;
+  padding: 0 15px;
+  text-align: center;
+}
+main section.journal > h4 {
+  padding: 20px;
+}
+main section.journal .col-4 {
+  float: left;
+}
+
+/*MAIN-RECIPES*/
+/*MAIN-COLLECTION*/
 /*FOOTER*/
-footer {
+footer > .footer-imgs img {
+  width: 100%;
+}
+
+footer > .container {
   padding: 50px 0;
 }
-footer .row {
+footer > .container .row {
   margin: 0 -20px;
 }
-footer .row > * {
+footer > .container .row > * {
   width: 25%;
   float: left;
   padding: 0 20px;
 }
-footer li {
+footer > .container li {
   margin: 20px 0;
 }
-footer .contact {
+footer > .container .contact {
   color: #96999a;
 }
-footer h5 {
+footer > .container h5 {
   color: #fc7525;
 }

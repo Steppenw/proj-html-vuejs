@@ -52,7 +52,22 @@ ul.links > li > a {
   clear: both;
 }
 
+.col-3 {
+  width: 25%;
+}
+
 .col-4 {
   width: calc(100% / 3);
-  float: left;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+/*BUTTONS*/
+.btn {
+  padding: $spacing;
+  background-color: #fc7525;
+  border-radius: $default-radius;
+  color: white;
 }
