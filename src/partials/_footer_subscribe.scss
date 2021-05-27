@@ -1,0 +1,12 @@
+/*FOOTER-SUBSCRIBE*/
+footer > section.subscribe .col-4 {
+  margin: 0 auto;
+
+  > .title {
+    padding: 100px 0;
+
+    > .subscription {
+      margin-top: ($spacing * 3);
+    }
+  }
+}

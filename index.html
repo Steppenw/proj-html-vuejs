@@ -13,6 +13,13 @@
       background-size: cover;
       background-position: center;
     }
+
+    section.subscribe {
+      background: url('imgs/subscribe-sec-bg.png');
+      background-size: cover;
+      background-position: center;
+
+    }
   </style>
   <title>Food</title>
 </head>
@@ -215,6 +222,22 @@
     <!-- FOOTER -->
     <footer>
 
+      <!-- SUBSCRIBE -->
+      <section class="subscribe">
+        <div class="col-4">
+          <div class="title text-center">
+            <h2 :class="display">Sottoscrizione avvenuta con successo!</h2>
+            <h2>Subscribe & Receive A Free eBook</h2>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia nulla, perferendis voluptas quod quis iusto.</span>
+            <div class="subscription">
+              <input v-model="email" type="text" placeholder="Insert your email" @keyup.esc="email = ''" @keyup.enter="subscribe">
+              <a class="btn" href="" @click.prevent="subscribe">SUBSCRIBE</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /SUBSCRIBE -->
+      
       <div class="footer-imgs flex">
         <div class="col-3">
           <img src="imgs/Yogurt-Nan-400x263.jpg" alt="Yogurt-Nan" />
@@ -291,6 +314,10 @@
 
     </footer>
     <!-- /FOOTER -->
+
+    <a class="up" href="#app">
+      <i class="fas fa-chevron-up"></i>
+    </a>
 
   </div>
 

@@ -82,8 +82,22 @@ new Vue(
           href: '#'
         }      
 
-      ]
+      ],
 
+      email: '',
+      display: 'dspl-none'
+
+    },
+    methods: {
+      subscribe() {
+        if (this.email === '') {
+          return;
+        }
+
+        this.display = 'dspl-blk';
+
+        this.email = '';
+      }
     }
   }
 );

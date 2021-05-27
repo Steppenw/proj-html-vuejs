@@ -11,6 +11,10 @@ h1 {
   font-size: 25px;
 }
 
+h2 {
+  font-size: 22px;
+}
+
 h4 {
   font-size: 18px;
 }
@@ -28,6 +32,10 @@ h4 {
 i {
   color: #96999a;
   margin: 0 10px;
+}
+
+i.fa-chevron-up {
+  color: white;
 }
 
 .social > a:hover > i {
@@ -71,11 +79,34 @@ ul.links > li > a:hover {
   text-align: center;
 }
 
+.dspl-none {
+  display: none;
+}
+
+.dspl-blk {
+  display: block;
+}
+
 /*BUTTONS*/
 .btn {
   padding: 10px;
   background-color: #fc7525;
   color: white;
+}
+
+.up {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  line-height: 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background-color: #39493e;
+}
+.up:hover {
+  background-color: #6a6b6c;
 }
 
 /*HEADER*/
@@ -233,6 +264,17 @@ section.collection .content > img {
   display: block;
   width: 50%;
   margin: auto;
+}
+
+/*FOOTER-SUBSCRIBE*/
+footer > section.subscribe .col-4 {
+  margin: 0 auto;
+}
+footer > section.subscribe .col-4 > .title {
+  padding: 100px 0;
+}
+footer > section.subscribe .col-4 > .title > .subscription {
+  margin-top: 30px;
 }
 
 /*FOOTER*/
