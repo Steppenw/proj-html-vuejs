@@ -1,17 +1,30 @@
 /*MAIN*/
 main {
   background-color: #f5f5f1;
+  padding-bottom: ($spacing * 10);
 }
 
 .content {
-  padding: 0 ($spacing + 5px);
-  text-align: center;
+  background-color: white;
 
   > img {
     width: 100%;
   }
 
-  > .title {
-    padding: ($spacing + 5px);
+  > .article {
+    padding: ($spacing * 2);
+
+    > p {
+      margin: ($spacing * 2) 0;
+    }
+  }
+}
+
+div.title {
+  padding: ($spacing * 10) ($spacing * 25) ($spacing * 5);
+  line-height: 1.5;
+
+  > h5 {
+    margin-bottom: $spacing;
   }
 }

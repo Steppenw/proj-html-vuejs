@@ -1,1 +1,26 @@
 /*MAIN-RECIPES*/
+
+
+section.recipes .row {
+  margin: 0 (-($spacing + 5px));
+}
+
+section.recipes .col-6:not(.col-6.flex) {
+  padding: 0 ($spacing + 5px);
+}
+
+section.recipes .article {
+  line-height: 1.8;
+}
+
+section.recipes .col-6.flex {
+  flex-wrap: wrap;
+
+  > * {
+    margin-bottom: ($spacing * 2);
+  }
+
+  img {
+    width: 100%;
+  }
+}

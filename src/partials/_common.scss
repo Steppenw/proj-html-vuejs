@@ -11,6 +11,10 @@ h1 {
   font-size: $h1-font-size;
 }
 
+h4 {
+  font-size: $h4-font-size;
+}
+
 .container {
   max-width: 75%;
   width: 100%;
@@ -64,10 +68,13 @@ ul.links > li > a {
   width: 50%;
 }
 
+.text-center {
+  text-align: center;
+}
+
 /*BUTTONS*/
 .btn {
   padding: $spacing;
   background-color: #fc7525;
-  border-radius: $default-radius;
   color: white;
 }

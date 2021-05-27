@@ -3,7 +3,7 @@ main {
 
   > .container.relative {
     position: relative;
-    padding-bottom: ($spacing * 40);
+    padding-bottom: ($spacing * 31);
   }
   
   section.journal {
@@ -19,6 +19,11 @@ main {
   
     .col-4 {
       float: left;
+
+      > .content {
+        padding: 0 ($spacing + 5px);
+        line-height: 1.5;
+      }
     }
   }
 }
